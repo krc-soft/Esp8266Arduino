@@ -280,6 +280,7 @@ bool UpdaterClass::end(bool evenIfRemaining){
       return false;
     }
     free(sig);
+    _size = binSize;
 #ifdef DEBUG_UPDATER
     DEBUG_UPDATER.printf_P(PSTR("[Updater] Signature matches\n"));
 #endif
